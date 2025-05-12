@@ -10,7 +10,7 @@ load_dotenv()
 API_ID = 23497256
 API_HASH = "9b55ac125b107ef2a544b520aeca0823"
 BOT_TOKEN = "7665256594:AAHqDwAKy0IzDTjA13-wgnNPv22CxtS8g9E"
-MONGO_DB_URI = ""
+MONGO_DB_URI = "mongodb+srv://priyanshikaurji:priyanshikaurji@cluster0.kcbnt.mongodb.net/TeleBot?retryWrites=true&w=majority&appName=Cluster0"
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 LOGGER_ID = 
 OWNER_ID = 
