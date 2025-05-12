@@ -7,13 +7,13 @@ from pyrogram import filters
 load_dotenv()
 
 
-API_ID = 23497256
-API_HASH = "9b55ac125b107ef2a544b520aeca0823"
-BOT_TOKEN = "7665256594:AAHqDwAKy0IzDTjA13-wgnNPv22CxtS8g9E"
-MONGO_DB_URI = "mongodb+srv://priyanshikaurji:priyanshikaurji@cluster0.kcbnt.mongodb.net/TeleBot?retryWrites=true&w=majority&appName=Cluster0"
+API_ID = int(getenv("23497256"))
+API_HASH = getenv("9b55ac125b107ef2a544b520aeca0823")
+BOT_TOKEN = getenv("7665256594:AAHqDwAKy0IzDTjA13-wgnNPv22CxtS8g9E")
+MONGO_DB_URI = getenv("mongodb+srv://priyanshikaurji:priyanshikaurji@cluster0.kcbnt.mongodb.net/TeleBot?retryWrites=true&w=majority&appName=Cluster0", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
-LOGGER_ID = -1002474197899
-OWNER_ID = 6388959089
+LOGGER_ID = int(getenv("-1002474197899", None))
+OWNER_ID = int(getenv("6388959089", None))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -53,7 +53,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = "1BVtsOKEBuyUaKHiB6H-KHtLwAwUKitAYWNE35KQzEedaoniWxYIXfH4uswuUb8lPxlAYxHSW7wkTts_LEJqdAOO_QYkAbSupL84zR8fKlr1Lj2PXtc4c0fJ9Zd3mE4YD9c0Bjx2bOe0tEoWvAS35B4_TW_JYA86-IzAe_1okrFiBxL5R9L_tAziI9X-IibNnMYDa2Y5-FNnV6WRKLtz2T40FZ7t6SO9y-bTlw7b23iPUTZjaLp99-nHKM7gZUkNtUMt0NMwYkCW4JtRBSRtnYCckLYAZscWuuxe7iGGFECdO0Q3RzWxadFXMpsY6mjIYgb6e0F_qn0ypaytPng5CjKaI-yiJbTE="
+STRING1 = int(getenv("1BVtsOKEBuyUaKHiB6H-KHtLwAwUKitAYWNE35KQzEedaoniWxYIXfH4uswuUb8lPxlAYxHSW7wkTts_LEJqdAOO_QYkAbSupL84zR8fKlr1Lj2PXtc4c0fJ9Zd3mE4YD9c0Bjx2bOe0tEoWvAS35B4_TW_JYA86-IzAe_1okrFiBxL5R9L_tAziI9X-IibNnMYDa2Y5-FNnV6WRKLtz2T40FZ7t6SO9y-bTlw7b23iPUTZjaLp99-nHKM7gZUkNtUMt0NMwYkCW4JtRBSRtnYCckLYAZscWuuxe7iGGFECdO0Q3RzWxadFXMpsY6mjIYgb6e0F_qn0ypaytPng5CjKaI-yiJbTE=", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
